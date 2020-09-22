@@ -111,4 +111,8 @@ export class ScriptSceneDto {
   @Type(() => StoryDto)
   @ValidateNested()
   public stories: StoryDto[];
+
+  @Expose()
+  @IsString()
+  public weatherstatus: String;
 }

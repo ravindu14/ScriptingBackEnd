@@ -8,7 +8,6 @@ const sceneSchema = new mongoose.Schema(
     },
     sceneNumber: {
       type: String,
-      unique: true,
     },
     scriptId: {
       type: String,
@@ -41,6 +40,9 @@ const sceneSchema = new mongoose.Schema(
     },
     stories: {
       type: Array,
+    },
+    weatherstatus: {
+      type: String,
     },
   },
   { _id: false, timestamps: { createdAt: true } }
